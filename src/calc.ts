@@ -1,13 +1,13 @@
-type FIXME =  ReturnType<typeof add | typeof subtract>;
+type FIXME = ReturnType<typeof add | typeof subtract>;
 
 type Equals<A, B> = A extends B ? (B extends A ? "success" : never) : never;
 
-type Add<A, B> =  FIXME;
-function add(A:number, B:number):number {
-    return A + B;
+type Add<A, B> = FIXME;
+function add(A: number, B: number): number {
+  return A + B;
 }
-function  subtract(A:number, B:number):number {
-    return A - B;
+function subtract(A: number, B: number): number {
+  return A - B;
 }
 
 type Subtract<A, B> = FIXME;
